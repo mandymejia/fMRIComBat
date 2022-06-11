@@ -1,0 +1,33 @@
+Package: fMRIComBat
+Type: Package
+Title: ComBat Batch Correction for fMRI Timeseries Data
+Version: 0.0.1
+Authors@R: c(
+    person(given = "Amanda",
+           family = "Mejia",
+           email = "mandy.mejia@gmail.com",
+           role = c("aut", "cre")),
+    person(given = "Damon",
+           family = "Pham",
+           email = "damondpham@gmail.com",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0001-7563-4727"))
+    )
+Maintainer: Amanda Mejia <mandy.mejia@gmail.com>
+Description: Functions implementing the fMRI ComBat model.
+Depends: R (>= 3.6.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports:
+    ciftiTools (>= 0.8.0),
+    fMRIscrub,
+    stats
+Suggests:
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.0
+URL: https://github.com/mandymejia/ComBat
+BugReports: https://github.com/mandymejia/ComBat/issues
