@@ -4,9 +4,13 @@
 \alias{fMRIComBat}
 \title{fMRI ComBat}
 \usage{
-fMRIComBat(...)
+fMRIComBat(BOLD, batch, nreg = NULL, TR = NULL, hpf = 0.01, scale = TRUE)
 }
 \arguments{
+\item{BOLD}{file paths to the BOLD data as CIFTI, NIFTI, or GIFTI files.}
+
+\item{batch}{Key for the batch of each entry in \code{BOLD}.}
+
 \item{...}{Description}
 }
 \value{
