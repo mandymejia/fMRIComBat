@@ -1,13 +1,13 @@
 #' fMRI ComBat
-#' 
+#'
 #' Batch correction for fMRI data
-#' 
+#'
 #' @param BOLD file paths to the BOLD data as CIFTI, NIFTI, or GIFTI files.
 #' @param batch Key for the batch of each entry in \code{BOLD}.
 #' @param ... Description
 #' @return The value
 #' @export
-fMRIComBat <- function(BOLD, batch, nreg=NULL, TR=NULL, hpf=.01, scale=TRUE){
+fMRIComBat <- function(BOLD, batch, mask=NULL, nreg=NULL, TR=NULL, hpf=.01, scale=TRUE){
 
   # Format of `BOLD`
   format <- infer_BOLD_format(BOLD)
